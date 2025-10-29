@@ -1,0 +1,1 @@
+include ':app'\nrootProject.name = 'Linguaflash'\n

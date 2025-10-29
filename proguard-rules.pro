@@ -1,0 +1,1 @@
+# proguard default\n-dontwarn com.google.**\n-keep class com.google.** { *; }\n

@@ -1,0 +1,1 @@
+#!/bin/sh\necho gradlew placeholder\n

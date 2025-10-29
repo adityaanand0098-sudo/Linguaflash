@@ -1,0 +1,1 @@
+# Linguaflash - Final Project v2\n\nThis project is ready to push to GitHub. Contains adaptive icon, splash with subtitle, Kotlin source, ML Kit deps (text recognition + translate).\n

@@ -1,0 +1,1 @@
+@echo off\necho gradlew placeholder\n
