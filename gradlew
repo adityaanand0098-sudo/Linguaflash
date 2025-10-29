@@ -1,1 +1,1 @@
-#!/bin/sh\necho gradlew placeholder\n
+404: Not Found
