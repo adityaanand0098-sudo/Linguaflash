@@ -1,14 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent" android:layout_height="match_parent"
-    android:background="@color/white">
-    <LinearLayout android:orientation="vertical" android:padding="16dp" android:layout_width="match_parent" android:layout_height="wrap_content">
-        <Switch android:id="@+id/nightModeSwitch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Night Mode"/>
-        <TextView android:layout_marginTop="12dp" android:text="Accent Color"/>
-        <RadioGroup android:id="colorOptions" android:layout_width="match_parent" android:layout_height="wrap_content">
-            <RadioButton android:id="@+id/colorOrange" android:text="Orange" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
-            <RadioButton android:id="@+id/colorPurple" android:text="Purple" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
-            <RadioButton android:id="@+id/colorPink" android:text="Pink" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
-        </RadioGroup>
-    </LinearLayout>
-</ScrollView>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/colorLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose a color theme:"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp" />
+
+    <RadioGroup
+        android:id="@+id/colorOptions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/colorOptionRed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Red" />
+
+        <RadioButton
+            android:id="@+id/colorOptionBlue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Blue" />
+
+        <RadioButton
+            android:id="@+id/colorOptionGreen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Green" />
+    </RadioGroup>
+
+</LinearLayout>

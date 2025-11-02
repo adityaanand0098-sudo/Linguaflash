@@ -1,1 +1,2 @@
-include ':app'\nrootProject.name = 'Linguaflash'\n
+include ':app'
+rootProject.name = 'Linguaflash'
