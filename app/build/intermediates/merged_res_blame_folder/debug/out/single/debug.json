@@ -1,0 +1,38 @@
+[
+    {
+        "merged": "com.example.linguaflash.app-merged_res-38:/mipmap-mdpi_ic_launcher_foreground.png.flat",
+        "source": "com.example.linguaflash.app-main-40:/mipmap-mdpi/ic_launcher_foreground.png"
+    },
+    {
+        "merged": "com.example.linguaflash.app-merged_res-38:/mipmap-xxxhdpi_ic_launcher_foreground.png.flat",
+        "source": "com.example.linguaflash.app-main-40:/mipmap-xxxhdpi/ic_launcher_foreground.png"
+    },
+    {
+        "merged": "com.example.linguaflash.app-merged_res-38:/mipmap-hdpi_ic_launcher_foreground.png.flat",
+        "source": "com.example.linguaflash.app-main-40:/mipmap-hdpi/ic_launcher_foreground.png"
+    },
+    {
+        "merged": "com.example.linguaflash.app-merged_res-38:/layout_activity_splash.xml.flat",
+        "source": "com.example.linguaflash.app-main-40:/layout/activity_splash.xml"
+    },
+    {
+        "merged": "com.example.linguaflash.app-merged_res-38:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "com.example.linguaflash.app-main-40:/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "com.example.linguaflash.app-merged_res-38:/mipmap-xxhdpi_ic_launcher_foreground.png.flat",
+        "source": "com.example.linguaflash.app-main-40:/mipmap-xxhdpi/ic_launcher_foreground.png"
+    },
+    {
+        "merged": "com.example.linguaflash.app-merged_res-38:/mipmap-xhdpi_ic_launcher_foreground.png.flat",
+        "source": "com.example.linguaflash.app-main-40:/mipmap-xhdpi/ic_launcher_foreground.png"
+    },
+    {
+        "merged": "com.example.linguaflash.app-merged_res-38:/layout_activity_main.xml.flat",
+        "source": "com.example.linguaflash.app-main-40:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.example.linguaflash.app-merged_res-38:/layout_activity_settings.xml.flat",
+        "source": "com.example.linguaflash.app-main-40:/layout/activity_settings.xml"
+    }
+]

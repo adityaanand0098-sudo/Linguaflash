@@ -1,0 +1,31 @@
+R_DEF: Internal format may change without notice
+local
+color accent_orange
+color accent_pink
+color accent_purple
+color black
+color light_gray
+color white
+id captureButton
+id colorLabel
+id colorOptionBlue
+id colorOptionGreen
+id colorOptionRed
+id colorOptions
+id controls
+id previewView
+id resultText
+id speakButton
+id splashLogo
+id splashSubtitle
+id splashTitle
+id targetSpinner
+layout activity_main
+layout activity_settings
+layout activity_splash
+mipmap ic_launcher
+mipmap ic_launcher_foreground
+string app_name
+string splash_subtitle
+style Theme.Linguaflash
+style Theme.Linguaflash.Splash
