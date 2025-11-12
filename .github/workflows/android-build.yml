@@ -9,7 +9,8 @@ jobs:
   build:
     runs-on: ubuntu-latest
     env:
-      JAVA_HOME_17: ${{ runner.tool_cache }}/jdk/17
+      JAVA_HOME: /usr/lib/jvm/temurin-17-jdk-amd64
+
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
