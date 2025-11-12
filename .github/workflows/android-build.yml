@@ -31,11 +31,12 @@ jobs:
           restore-keys: |
             gradle-${{ runner.os }}-
 
-      - name: Install Android SDK
-        uses: android-actions/setup-android@v2
-        with:
-          api-level: 34
-          tools: "build-tools;34.0.0,platform-tools,platforms;android-34"
+      - name: Generate Gradle Wrapper (if missing)
+        run: |
+          if [ ! -f gradle/wrapper/gradle-wrapper.jar ]; then
+            echo "Gradle wrapper missing — generating..."
+            gradle wrapper --gradle-version 8.0.2
+          fi
 
       - name: Make gradlew executable
         run: chmod +x ./gradlew
