@@ -49,3 +49,8 @@ jobs:
         with:
           name: app-debug-apk
           path: app/build/outputs/apk/debug/app-debug.apk
+- name: Remove old Gradle wrapper
+        run: rm -rf gradle/wrapper gradlew gradlew.bat
+- name: Generate Gradle Wrapper (fresh)
+        run: gradle wrapper --gradle-version 8.2.1
+
