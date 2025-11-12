@@ -1,1 +1,2 @@
-*.iml\n.gradle\n/local.properties\n/.idea/\n/build\n/captures\n
+*.iml\n.gradle\n/local.properties\n/.idea/\n/build\n/captures\ngradle-*-bin.zip
+gradle/wrapper/gradle-wrapper.jar
