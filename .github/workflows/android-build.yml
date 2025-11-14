@@ -29,13 +29,25 @@ jobs:
           java-version: 17
 
       # -------------------------
-      # Generate NEW Gradle wrapper (8.2.1 only)
+      # Generate NEW Gradle wrapper (8.2.1)
       # -------------------------
       - name: Generate Gradle Wrapper 8.2.1
         run: gradle wrapper --gradle-version 8.2.1
 
       # -------------------------
-      # Cache Gradle files
+      # Make gradlew executable
+      # -------------------------
+      - name: Make gradlew executable
+        run: chmod +x ./gradlew
+
+      # -------------------------
+      # Verify wrapper works
+      # -------------------------
+      - name: Verify Gradle Wrapper
+        run: ./gradlew --version
+
+      # -------------------------
+      # Cache Gradle
       # -------------------------
       - name: Cache Gradle
         uses: actions/cache@v4
@@ -56,19 +68,17 @@ jobs:
           api-level: 34
           tools: "build-tools;34.0.0,platform-tools,platforms;android-34"
 
-      - name: Make gradlew executable
-        run: chmod +x ./gradlew
-
+      # -------------------------
+      # Build APK
+      # -------------------------
       - name: Build Debug APK
         run: ./gradlew assembleDebug --no-daemon
 
+      # -------------------------
+      # Upload APK
+      # -------------------------
       - name: Upload APK artifact
         uses: actions/upload-artifact@v4
         with:
           name: app-debug-apk
           path: app/build/outputs/apk/debug/app-debug.apk
-- name: Make gradlew executable
-  run: chmod +x ./gradlew
-
-- name: Verify Gradle Wrapper
-  run: ./gradlew --version
